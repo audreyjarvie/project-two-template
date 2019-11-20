@@ -2,33 +2,42 @@
 
 
 body { 
-	font-family: Helvetica, sans-serif;
 	font-size: 16px;
+	font-family: 'Noto Sans', sans-serif;
+
 	 }
 
-h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+/* Main Menu */
+	 ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom:20px
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
 }
+li.icon img {width: 40px;
+position: left;}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+}
+/*  */
 
 h1 {
 	font-size: 48px;
 }
 
-h2 {
-	font-size: 36px;
-}
-
-h3 {
-	font-size: 28px;
-}
-h4 {
-	font-size: 24px;
-}
-
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
-}
 
 header {margin-bottom: 20px;}
 
@@ -36,10 +45,12 @@ header {margin-bottom: 20px;}
 img { width: 100%; }
 
 a { 
-	color: red;
+	color: black;
 	text-decoration: none;
+	font-family: 'Noto Sans', sans-serif;
+
 	 }
-a:hover { color: black; }
+a:hover { color: #acebfc; }
 
 .grid {
 	display: grid;
@@ -53,8 +64,3 @@ a:hover { color: black; }
 	background-color: #ccc;
 	padding: 20px;
 }
-/*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
-*/
