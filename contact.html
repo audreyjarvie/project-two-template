@@ -1,11 +1,40 @@
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<h1>
-	Contact
-	</h1>
-<body>
-	<img src="g.png"/>
-	Boba Milk - SE Portland
+
+	 <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</header>
+
+<div class="menu">
+  <ul>
+    <a href="#"><li>ABOUT</li></a>
+    <a href="#"><li>MENU</li></a>
+    <a href="#"><li>CONTACT</li></a>
+
+  </ul>
+</div> 
+
+
+	<meta charset="UTF-8">
+	<title>Project two - Subpage One</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- This is a special css library that overrides all the ugle default css styles that come with html5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="stockholm">
+
+	<main>
+		<div class="container">
+
+			<div class="head">
+				<div class="stock">
+					<h2>Contact Us</h2>
+
+					<p>Boba Milk - SE Portland
 	2134 SE Division St
 	Portland, OR 97202
 	Phone:(971) 229-1617
@@ -21,5 +50,40 @@
 	Monday & Tuesday: Closed
 	Wednesday-Sunday: 12-8 PM
 	Directions
-	
+</p>
+					<ul>
+						<li><a href="bas.html">BOOK A STAY</a></li>
+						<li><a href="comingsoon.html">WHAT TO DO</a></li>
+						<li><a href="comingsoon2.html">IMAGES</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!----------------------------------->
+		<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+	</main>
+	<!-- link for jquery -->
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+  	<!-- link for your script file -->
+  	<script src="scripts/script.js"></script>
 </body>
+</html>
