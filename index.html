@@ -1,53 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<header>
+  <div class="inner">
+    <nav>
+      <input type="checkbox" id="nav" /><label for="nav"></label>
+      <ul>
+        <li><a href="index.html">Home</a></li>     
+        <li>
+          <a href="about.html">About Us</a>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>      
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu1.html">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>  
+
 <head>
+  <meta charset="UTF-8">
+  <title>Project One - Homepage</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
-  <button class="hamburger">&#9776;</button>
-  <button class="cross">&#735;</button>
-</header>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: 'Noto Sans', sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-<div class="menu">
-  <ul>
-    <a href="#"><li>ABOUT</li></a>
-    <a href="#"><li>MENU</li></a>
-    <a href="#"><li>CONTACT</li></a>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-  </ul>
-</div> 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Next Button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 
 
-	<img src="images/bobapearls.jpg"/>
-	<meta charset="UTF-8">
-	<title>Project One - Homepage</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/style.css">
+/* text */
+.text {
+  color: #626D75;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 10px}
+}
+</style>
 </head>
-<body>
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-	<header>
-		<!-- header, h1, logo etc content -->
+<div class="slideshow-container">
 
-	</header>
-	<main>
-			<!-- Main content here -->
-		<div class="grid">
-			<div>Column 1</div>
+<div class="mySlides fade">
+  <img src="images/pour.jpg" style="width:100%">
+  <div class="text">FRESH MILK, NEVER FROM POWDER</div>
+</div>
 
-		</div>
-	</main>
+<div class="mySlides fade">
+  <img src="images/teapick.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="images/location.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
-	<footer>
-		<!-- footer content here -->
-		&copy; Boba Milk 2019
-	</footer>
+<div class="wrapper">
+  <ul>
+    <li class="facebook smicon"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+    <li class="twitter smicon"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+    <li class="instagram smicon"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+    <li class="google smicon"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+    <li class="whatsapp smicon"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+
+
+ <!-- Photo Gallery! -->
+
+<section class="no-touch">
+
+  <div class="wrap">
+    
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/icet.png" />
+        
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/a.png"/>
+       
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/b.png" />
+       
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/c.png" />
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/d.png" />
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/e.png" />
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/f.png" />
+       
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/gg.png" />
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/h.png" />
+       
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="images/i.png" />
+        
+      </div>
+    </div> 
+</section>
+
+
+
+
+
+ <!-- script stuff -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
 
 
 	<!-- link for jquery -->

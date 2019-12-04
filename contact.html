@@ -1,75 +1,87 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<header>
+  <div class="inner">
+    <nav>
+      <input type="checkbox" id="nav" /><label for="nav"></label>
+      <ul>
+        <li><a href="index.html">Home</a></li>     
+        <li>
+          <a href="about.html">About Us</a>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>      
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu1.html">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>  
+
 <head>
+  <meta charset="UTF-8">
+  <title>Project One - Homepage</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
-	 <button class="hamburger">&#9776;</button>
-  <button class="cross">&#735;</button>
-</header>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: 'Noto Sans', sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<div class="menu">
-  <ul>
-    <a href="#"><li>ABOUT</li></a>
-    <a href="#"><li>MENU</li></a>
-    <a href="#"><li>CONTACT</li></a>
+/* Columns */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
 
-  </ul>
-</div> 
-
-
-	<meta charset="UTF-8">
-	<title>Project two - Subpage One</title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<!-- This is a special css library that overrides all the ugle default css styles that come with html5 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/style.css">
+/* columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
-<body class="stockholm">
+<body>
 
-	<main>
-		<div class="container">
 
-			<div class="head">
-				<div class="stock">
-					<h2>Contact Us</h2>
-
-					<p>Boba Milk - SE Portland
-	2134 SE Division St
-	Portland, OR 97202
-	Phone:(971) 229-1617
-	Monday: Closed
-	Tuesday-Thursday: 12-9PM
-	Friday & Saturday: 12-10PM
-	Sunday: 12-9PM
-	Directions
-
-	Boba Milk - Venice Beach
-	1425 Ocean Front Walk
-	Playa del Rey, CA 90291
-	Monday & Tuesday: Closed
-	Wednesday-Sunday: 12-8 PM
-	Directions
+<div class="row">
+  <div class="column" style="background-color:#white;">
+    <img src="images/por.png">
+    <p>
 </p>
-					<ul>
-						<li><a href="bas.html">BOOK A STAY</a></li>
-						<li><a href="comingsoon.html">WHAT TO DO</a></li>
-						<li><a href="comingsoon2.html">IMAGES</a></li>
-					</ul>
-				</div>
-			</div>
+  </div>
+  <div class="column" style="background-color:#white;">
+    <img src="images/ven.png">
+  </p>
+  </div>
+</div>
 
-		</div>
-		<!----------------------------------->
-		<div class="container">
+
+<!----------------------------------->
+    <div class="container">
   <form action="action_page.php">
 
-    <label for="fname">First Name</label>
+  
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
+    
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
@@ -77,13 +89,15 @@
   </form>
 </div>
 
-	</main>
-	<!-- link for jquery -->
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
-  	<script src="scripts/script.js"></script>
+  
+  <!-- link for jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!-- link for your script file -->
+    <script src="scripts/script.js"></script>
+
+
 </body>
 </html>
