@@ -585,3 +585,57 @@ input[type=submit]:hover {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Helvetica', sans-serif;
+}
+
+button {
+	display: inline-block;
+	font-size: 3em;
+	background: none;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	color: rebeccapurple;
+	transition: color .2s;
+}
+button:after {
+	content: '';
+	position: absolute;
+	background-color: rebeccapurple;
+	z-index: -1;
+}
+button:hover {
+	color: #FFF;
+}
+
+/* Directions */
+button.left:after {
+	left: -.3em;
+	top: 0;
+	height: 100%;
+	width: .08em;
+	transform: skew(-20deg);
+	transition: width .2s;
+}
+button.left:hover:after {
+	width: calc(100% + .6em);
+}
+
+button.right:after {
+	right: -.3em;
+	top: 0;
+	height: 100%;
+	width: .08em;
+	transform: skew(-20deg);
+	transition: width .2s;
+}
+button.right:hover:after {
+	width: calc(100% + .6em);
+}
